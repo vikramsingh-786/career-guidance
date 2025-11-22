@@ -1,0 +1,27 @@
+# Dependencies (Ignores node_modules in root, backend, and frontend)
+node_modules/
+*/node_modules/
+
+# Environment Variables (Security - DO NOT COMMIT THESE)
+.env
+.env.local
+.env.*.local
+*/.env
+*/.env.local
+
+# Build Outputs (Next.js and others)
+.next/
+dist/
+build/
+out/
+
+# Debug Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# System Files
+.DS_Store
+Thumbs.db
