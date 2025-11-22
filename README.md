@@ -603,34 +603,6 @@ curl -X POST https://your-backend-url.onrender.com/api/roadmap \
   -d '{"targetRole":"Backend Developer"}'
 ```
 
-#### 4. Monitor Performance
-
-**Render Dashboard**:
-- Check logs for errors
-- Monitor response times
-- Watch for cold starts (free tier)
-
-**Vercel Dashboard**:
-- Check deployment status
-- Monitor function logs
-- Review performance metrics
-
----
-
-### Important Notes for Free Tiers
-
-#### ⚠️ Render Free Tier
-- **Cold Starts**: Services spin down after 15 minutes of inactivity
-- **First Request**: May take 30-60 seconds to wake up
-- **Solution**: Consider keeping service warm or upgrade to paid tier
-
-#### ✅ Vercel Free Tier
-- Generous limits for personal projects
-- No cold starts
-- Fast global CDN
-- Perfect for frontend applications
-
----
 
 ### Troubleshooting
 
@@ -673,20 +645,6 @@ Solution: Verify backend URL in environment variables
 
 ---
 
-### Deployment URLs
-
-After successful deployment, update these in your README:
-
-```markdown
-## 🌐 Live Demo
-
-- **Frontend**: https://your-app.vercel.app
-- **Backend API**: https://your-backend.onrender.com
-- **API Documentation**: https://your-backend.onrender.com/api
-```
-
----
-
 ### Continuous Deployment
 
 Both platforms support automatic deployments:
@@ -702,199 +660,6 @@ Both platforms support automatic deployments:
 
 ---
 
-### Alternative Deployment Options
-
-If you prefer different platforms:
-
-**Backend Alternatives**:
-- Railway (similar to Render)
-- Heroku (paid plans only)
-- AWS EC2 / Elastic Beanstalk
-- DigitalOcean App Platform
-- Fly.io
-
-**Frontend Alternatives**:
-- Netlify
-- GitHub Pages
-- Cloudflare Pages
-- AWS Amplify
-
----
-
-## 📝 Supported Career Roles
-
-The application currently supports skill gap analysis and roadmaps for:
-
-| Role | Required Skills | Phases |
-|------|----------------|--------|
-| **Frontend Developer** | HTML, CSS, JavaScript, React, Git | 3 Phases (4-5 months) |
-| **Backend Developer** | Java, Spring Boot, SQL, APIs, Git | 3 Phases (4-5 months) |
-| **Data Analyst** | Excel, SQL, Python, Dashboards, Statistics | 3 Phases (4-5 months) |
-
----
-
-## 🎯 Key Implementation Details
-
-### Skill Gap Analysis Logic
-1. User inputs target role and current skills
-2. Backend normalizes inputs (trim, lowercase)
-3. Compares with predefined skill requirements
-4. Calculates matched vs. missing skills
-5. Generates completion percentage
-6. Provides recommendations based on gap size
-7. Prioritizes skills in logical learning order
-
-### Roadmap Generation
-- Pre-defined 3-phase structure for each role
-- Phase 1: Fundamentals (1-2 months)
-- Phase 2: Core Skills (2 months)
-- Phase 3: Advanced Topics (1-2 months)
-- Each phase includes skills, description, and resources
-
-### HackerNews Integration
-```javascript
-// Fetch flow
-1. GET /topstories.json → Returns array of story IDs
-2. Take first 5 IDs
-3. GET /item/{id}.json for each ID → Story details
-4. Format and display with metadata
-```
-
-### Theme System Architecture
-```javascript
-// ThemeContext provides:
-- isDark: boolean (current theme state)
-- toggleTheme: function (switch themes)
-- localStorage persistence
-- System preference detection
-- Auto-applies 'dark' class to <html>
-```
-
----
-
-## 🔒 Error Handling
-
-### Frontend
-- Form validation before submission
-- Loading states during API calls
-- Error messages for failed requests
-- Fallback UI for missing data
-- Navigation guards (redirects if no data)
-
-### Backend
-- Input validation middleware
-- Try-catch blocks in all controllers
-- Custom error messages
-- HTTP status codes (400, 404, 500)
-- CORS configuration for security
-
----
-
-## 🎨 Design System
-
-### Colors
-**Light Mode**:
-- Primary: Blue (#2563eb)
-- Success: Green (#16a34a)
-- Warning: Orange (#ea580c)
-- Danger: Red (#dc2626)
-- Background: Slate/Blue gradient
-- Cards: White (#ffffff)
-
-**Dark Mode**:
-- Primary: Blue (#60a5fa)
-- Success: Green (#4ade80)
-- Warning: Orange (#fb923c)
-- Danger: Red (#f87171)
-- Background: Gray gradient (#111827 → #1f2937)
-- Cards: Dark Gray (#1f2937)
-
-### Typography
-- Font Family: System fonts (sans-serif)
-- Headings: Bold, 2xl-4xl sizes
-- Body: Regular, sm-base sizes
-- Code: Monospace
-
-### Spacing
-- Containers: `container mx-auto px-4`
-- Cards: `p-6` to `p-8`
-- Gaps: `gap-4` to `gap-8`
-
----
-
-## 🧪 Testing Checklist
-
-### Manual Testing
-- [ ] Form validation works
-- [ ] API calls succeed
-- [ ] Loading states appear
-- [ ] Error handling works
-- [ ] Skill matching is accurate
-- [ ] Roadmap displays correctly
-- [ ] News loads from HackerNews
-- [ ] Theme toggle works
-- [ ] Theme persists on refresh
-- [ ] Responsive on mobile
-- [ ] Navigation works
-- [ ] Links open correctly
-
-### Browser Testing
-- [ ] Chrome
-- [ ] Firefox
-- [ ] Safari
-- [ ] Edge
-
----
-
-## 📚 Learning Resources Used
-
-Each roadmap includes curated resources:
-- **Documentation**: Official docs for all technologies
-- **Courses**: FreeCodeCamp, Frontend Masters, etc.
-- **Books**: Head First Java, Eloquent JavaScript
-- **Projects**: Portfolio project suggestions
-- **Platforms**: GitHub, Vercel, Netlify
-
----
-
-## 🤝 Future Enhancements
-
-Potential features for production version:
-- [ ] User authentication (JWT, OAuth)
-- [ ] Database integration (MongoDB/PostgreSQL)
-- [ ] User profiles and progress tracking
-- [ ] More career roles (DevOps, Mobile Dev, etc.)
-- [ ] AI-powered roadmap generation (OpenAI API)
-- [ ] Certificate tracking
-- [ ] Community features (forums, mentorship)
-- [ ] Email notifications
-- [ ] Export roadmap as PDF
-- [ ] Integration with learning platforms
-- [ ] Analytics dashboard
-- [ ] Multi-language support
-
----
-
-## 📊 Performance Optimizations
-
-- **Code Splitting**: Dynamic imports for routes
-- **Lazy Loading**: Components loaded on demand
-- **API Optimization**: Parallel requests with Promise.all
-- **Caching**: localStorage for theme preference
-- **Minification**: Production builds optimized
-- **CDN**: Assets served from CDN in production
-
----
-
-## 🐛 Known Issues & Limitations
-
-1. **Data Persistence**: No database - data resets on refresh
-2. **Role Limitation**: Only 3 predefined roles
-3. **Skill Matching**: Exact match only (case-insensitive)
-4. **News Refresh**: Manual page reload needed for new stories
-5. **No Authentication**: Public access only
-
----
 
 ## 📄 License
 
@@ -905,9 +670,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+- GitHub: [@yourusername](https://github.com/vikramsingh-786)
+- LinkedIn: [Your Profile](https://www.linkedin.com/in/vikram-singh-508b08250/)
+- Email: becomerdeveloper@gmail
 
 ---
 
@@ -940,8 +705,6 @@ This project was built as part of the **CodeAtRandom AI Full Stack Developer Ass
 - Modern UI/UX practices
 - Clean code architecture
 - Problem-solving abilities
-
-**Estimated Development Time**: 7-8 hours (as specified in assignment)
 
 ---
 
