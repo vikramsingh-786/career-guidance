@@ -670,8 +670,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/vikramsingh-786)
-- LinkedIn: [Your Profile](https://www.linkedin.com/in/vikram-singh-508b08250/)
+- GitHub: [@myusername](https://github.com/vikramsingh-786)
+- LinkedIn: [My Profile](https://www.linkedin.com/in/vikram-singh-508b08250/)
 - Email: becomerdeveloper@gmail
 
 ---
