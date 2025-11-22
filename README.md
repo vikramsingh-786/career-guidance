@@ -12,19 +12,19 @@ A modern full-stack web application that provides intelligent skill gap analysis
 ## 📸 Screenshots
 
 ### Home Page - Light Mode
-![Home Page Light Mode](frontend/src/assets/Homepage_dark_mode.png)
+![Home Page Light Mode](frontend/src/assets/Homepage_light_mode.png)
 *Career input form with role selection and skills input - Light theme with gradient background*
 
 ### Home Page - Dark Mode
-![Home Page Dark Mode](frontend/assets/Homepage_dark_mode.png)
+![Home Page Dark Mode](frontend/src/assets/Homepage_dark_mode.png)
 *Career input form in dark mode - Elegant dark interface with smooth contrast*
 
 ### Dashboard - Light Mode
-![Dashboard Light Mode](frontend/assets/dashboard_light_mode.png)
+![Dashboard Light Mode](frontend/src/assets/dashboard_light_mode.png)
 *Complete dashboard showing skill gap analysis, career roadmap, and tech news in light mode*
 
 ### Dashboard - Dark Mode
-![Dashboard Dark Mode](frontend/assets/dashboard_dark_mode.png)
+![Dashboard Dark Mode](frontend/src/assets/dashboard_dark_mode.png)
 *Complete dashboard in dark mode - Professional dark theme with all features visible*
 
 ---
