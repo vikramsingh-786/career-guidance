@@ -2,7 +2,7 @@
 
 A modern full-stack web application that provides intelligent skill gap analysis, personalized career roadmaps, and real-time tech news from HackerNews. Built with React, Node.js, and featuring a beautiful dark mode interface.
 
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](YOUR_VERCEL_URL_HERE)
+[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://career-guidance-vsingh.vercel.app/)
 [![React](https://img.shields.io/badge/React-18.x-blue?logo=react)](https://reactjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18.x-green?logo=node.js)](https://nodejs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.x-38bdf8?logo=tailwind-css)](https://tailwindcss.com/)
